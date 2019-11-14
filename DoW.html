@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!--Andy Osorio, November 21st 2019-->
+<title>Project No. 7</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700&display=swap">
+<link rel="stylesheet" type="text/css" href="css/AO_style.css">
+<script>
+	function calculate(){
+		var h;
+		
+		var q;
+		q = document.getElementById("date").value;
+		q = parseInt(q);
+		console.log(q);
+		
+		var m;
+		m = document.getElementById("month").value;
+		m = parseInt(m);
+		console.log(m);
+		
+		var year;
+		year = document.getElementById("year").value;
+		year = parseInt(year);
+		console.log(year);
+		
+		var j;
+		j = year / 100;
+		j = parseInt(j);
+		console.log(j);
+		
+		var k;
+		k = year % 100;
+		k = parseInt(k);
+		console.log(k);
+		
+		h = (q + ((26*(m+1))/10) + k + (k/4) + (j/4) + (5*j)) % 7;
+		h = parseInt(h);
+		
+		if(h == 0){
+			document.getElementById("output").innerHTML = "Saturday";
+		}else if(h == 1){
+			document.getElementById("output").innerHTML = "Sunday";
+		}else if(h == 2){
+			document.getElementById("output").innerHTML = "Monday";
+		}else if(h == 3){
+			document.getElementById("output").innerHTML = "Tuesday";
+		}else if(h == 4){
+			document.getElementById("output").innerHTML = "Wednesday";
+		}else if(h == 5){
+			document.getElementById("output").innerHTML = "Thursday";
+		}else if(h == 6){
+			document.getElementById("output").innerHTML = "Friday";
+		}
+	}
+</script>
+</head>
+
+<body>
+<header>
+<h1 class="pageHeader">Day of The Week</h1>
+</header>
+
+<nav class="navigation">
+<p class="navHeader">Navigation</p>
+<div class="hDivider"></div>
+<ul>
+<li><a href="HomePage.html">Home</a></li>
+<li><a class="active" href="DoW.html">Day of The Week</a></li>
+<li><a href="Icecream.html">Ice Cream Cone</a></li>
+<li><a href="Validation.html">Form Validation</a></li>
+</ul>
+</nav>
+
+<section>
+    <h2><b>Day of The Week</b></h2>
+    <br>
+    Enter Year (e.g 2000): <input type="text" id="year">
+    <br>
+    Enter Month(1-12): <input type="text" id="month">
+    <br>
+    Enter Date (1-31): <input type="text" id="date">
+    <br>
+    <button class="button" onclick=calculate()>Calculate Day Of The Week</button>
+    <p id="output"></p>
+</section>
+
+
+<footer>
+<p>
+<address>SCCC &bull; 1001 Crooked Hill Road &bull; Brentwood NY 11717
+<br>
+<script>
+	var date = new Date();
+	document.write("<em>" + date + "</em>");
+</script>
+</address>
+</footer>
+
+</body>
+</html>
