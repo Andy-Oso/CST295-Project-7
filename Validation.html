@@ -7,6 +7,19 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700&display=swap">
 <link rel="stylesheet" type="text/css" href="css/AO_style.css">
+<script>
+    function onlyLetters(event){
+        var unicode = event.which || event.keyCode;
+        if(unicode != 8){
+            if(unicode < 65 || unicode > 90){
+                if(unicode < 97 || unicode > 122){
+                    return false;
+                }
+            }
+        }
+    }
+</script>
+
 </head>
 
 <body>
@@ -26,7 +39,17 @@
 </nav>
 
 <section>
-
+    First name: 
+    <input type="text"  onkeypress="onlyLetters(event)">
+    <br><br>
+    Last name: 
+    <input type="text"  onkeypress="onlyLetters(event)">
+    <br><br>
+    State: 
+    <input type="text"  onkeypress="myFunction(event)">
+    <br><br>
+    ZIP code: 
+    <input type="text"  onkeypress="myFunction(event)">
 </section>
 
 
