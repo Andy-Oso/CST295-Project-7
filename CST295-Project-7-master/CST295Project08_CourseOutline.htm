@@ -1,0 +1,473 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CST295 Fall 2019 Course Outline</title>
+    <style>
+        button.accordian{
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            padding-left: 50px;
+            fonr-size: 15px;
+            border-radius: 10px;
+        }
+        
+        .active, button.accordian:hover{
+            background-color: #cccccc;
+        }
+        
+        button.accordian:after{
+            content: '+'; /* The '+' symbol*/
+            color: #777777;
+            font-weight: bold;
+            float: right;
+        }
+        .active:after{
+            content: '-';
+        }
+        div.panel{
+            padding: 0 18px;
+            background-color: white;
+            width:100%;
+            max-height: 0;
+            overflow: hidden;
+            transiton: max-height 0.5s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h2>CST295: Web Programming with JavaScript</h2>
+
+    </header>
+
+    <section>
+        <button type="button" class="accordian"></button>
+        <h3>TEXTBOOK AND SUPPLIES</h3>
+
+        <p>TEXTBOOK:</p>
+
+        <ul>
+
+            <li>
+                Flanagan, D,.&nbsp;
+
+                <a href="http://www.stilson.net/documentation/javascript.pdf"
+                   target="_blank">JavaScript: The Definitive Guide (6th Edition)</a>.&nbsp;
+                Sebastopol, CA: O'Reilly Media, Inc., 2011.  (ISBN: 978-0-596-80552-4)<br />&nbsp;
+            </li>
+
+        </ul>
+
+        <p>SUPPLIES:</p>
+
+        <ul>
+
+            <li>
+                A text editor such as Notepad, <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>,
+                or <a href="https://www.barebones.com/products/bbedit/" target="_blank">BBEdit</a>
+                (replaces TextWrangler for the Mac), or a web development application or studio
+                such as Aptana Studio 3, Adobe Dreamweaver, Adobe Creative Suite, Microsoft
+                Expression Web, Microsoft Expression Studio or Microsoft Visual Studio for
+                creating web pages (documents)<br />&nbsp;
+            </li>
+
+            <li>
+                At least two Internet web browsers such as Internet Explorer, Firefox, Chrome,
+                Safari and/or Opera for viewing and testing web documents<br />&nbsp;
+            </li>
+
+            <li>USB flash drive (memory stick) or some other storage device for saving files.</li>
+
+        </ul>
+
+    </section >
+
+    <section>
+
+        <h3>COURSE OBJECTIVES AND PROCEDURES</h3>
+
+        <p>COURSE OBJECTIVES</p>
+
+        <blockquote>
+            <p>Upon completion of this course, students will be able to:</p>
+        </blockquote>
+
+        <ol>
+            <li>Define and use data types, values and variables</li>
+            <li>Understand expressions and operators</li>
+            <li>Understand the structure of JavaScript statements</li>
+            <li>Create JavaScript objects</li>
+            <li>Apply arrays to JavaScript applications</li>
+            <li>Utilize functions to organize applications</li>
+            <li>Implement event handling</li>
+            <li>Use elements from the jQuery Library</li>
+            <li>Utilize client side storage</li>
+            <li>Structure and create content using the HTML5 API's</li>
+        </ol>
+
+        <p>PROCEDURES FOR ACCOMPLISHING THESE OBJECTIVES:</p>
+
+        <ol>
+            <li>Class lectures and discussions</li>
+            <li>Use of audio-visual devices</li>
+            <li>Homework review and practice problems from textbook and other sources</li>
+            <li>Application problems on IBM compatible computers</li>
+        </ol>
+
+    </section >
+
+    <section>
+
+        <h3>STUDENT REQUIREMENTS FOR COMPLETION OF THE COURSE</h3>
+
+        <ol>
+            <li>JavaScript programming assignments:&nbsp; <strong>75%</strong></li>
+            <li>Comprehensive Final Project:&nbsp; <strong>25%</strong></li>
+        </ol>
+
+        <blockquote>
+
+            <p>
+                Do not expect to get an “A” grade for doing the base project;
+                rather that grade is reserved for students who go beyond the requirements
+                of the assignment.&nbsp; Final grade will not be more than ten (10) percentage
+                points higher than the examination average.
+            </p>
+
+        </blockquote>
+
+    </section >
+
+    <section>
+
+        <h3>ASSIGNMENTS AND EXAMS</h3>
+
+        <blockquote>
+
+            <p>
+                Students must submit all projects via
+
+                <a href="http://suffolkonline.open.suny.edu" target="_blank">Blackboard</a>,
+
+                an Internet website maintained by Suffolk County Community College and
+                the State University of New York.&nbsp; Students who do not have Internet
+                access from home can get access from the computer labs on campus.&nbsp;
+                Click on any of the following links to watch videos that demonstrate
+                how to use Blackboard in this course.
+            </p>
+
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=Cv1KOhABlBE"
+                       target="_blank">Submit an Assignment</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=S5H_eguCKU8&feature=youtu.be"
+                       target="_blank">Checking Your Grades</a>
+                </li>
+            </ul>
+
+            <p>
+                All assignments and projects
+                are due by the end of the day (11:59 p.m.) on the date announced unless
+                otherwise stated.&nbsp; No late assignments will be accepted unless an
+                extension date is <strong><em>prearranged</em></strong> with the instructor.
+            </p>
+
+            <p>
+                Although computer lab time may be scheduled each week during class time,
+                students should be aware that additional lab time outside of class may
+                be necessary to complete the requirements of this course.&nbsp; Students
+                who do not have access to a computer of their own and/or the software
+                used in this class should plan to spend an additional 3 to 6 hours per
+                week in the Caumsett Hall room 207 computer lab.
+            </p>
+
+        </blockquote>
+
+    </section >
+
+    <section>
+
+        <h3>ATTENDANCE</h3>
+
+        <blockquote>
+
+            <p>
+                "The College expects that each student will exercise personal
+                responsibility with regard to class attendance. All students are expected
+                to attend every class session of each course for which they are registered.
+                Students are responsible for all that transpires in class whether or not
+                they are in attendance. The College defines excessive absence or lateness
+                as more than the equivalent of one week of class meetings during the semester.
+                Excessive absence or lateness may lead to failure in a course or removal
+                from the class roster." (College Catalog and Student Handbook)
+            </p>
+
+            <p>
+                Attendance is not a factor in the computation of the course grade but
+                may be a factor in determining class participation. It is the student's
+                responsibility to make his/her attendance known to the instructor if arriving
+                late. Students who stop attending classes <b><i>without officially withdrawing</i></b>
+                from the course will receive a failing grade (F).
+            </p>
+
+        </blockquote>
+
+    </section >
+
+    <section>
+
+        <h3>SCHEDULE OF TOPICS TO BE COVERED</h3>
+
+        <blockquote>
+
+            <p>Sept 5 – 12</p>
+
+            <ul>
+
+                <li>
+                    <a href="JavaScript3DataTypesValuesAndVariables.zip">Data Types, Values and Variables</a>
+                    (<a href="JavaScript3DataTypesValuesAndVariables.pdf" target="_blank">Lecture notes</a>)
+
+                    <ul style="list-style-type: square">
+                        <li>Reading:&nbsp; Chapter 3</li>
+                    </ul>
+
+                </li>
+
+                <li>
+                    Tutorial: "<a href="https://video.search.yahoo.com/search/video;_ylt=AwrE1xzV3HpdxBQAjHhXNyoA;_ylu=X3oDMTB0N2Noc21lBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNwaXZz?p=zip+and+unzip+files+windows+10&fr2=piv-web&fr=yfp-t-s#id=1&vid=af8ec2b9e27797f25df2b358ec15240a&action=view"
+                                  target="_blank">How to Zip/Unzip a File or Folder in Windows</a>",
+                    Copyright &copy; MDTech.com
+                </li>
+
+                <li><a href="CST295Project01.htm">Project 1</a> (Due: Sept 19)</li>
+
+            </ul>
+
+            <p>Sept 17 – 24</p>
+
+            <ul>
+
+                <li>
+                    <a href="JavaScript4ExpressionsAndOperators.zip">Expressions and Operators</a>
+                    (<a href="JavaScript4ExpressionsAndOperators.pdf" target="_blank">Lecture notes</a>)
+
+                    <ul style="list-style-type: square">
+                        <li>Reading:&nbsp; Chapter 4</li>
+                    </ul>
+
+                </li>
+
+                <li>
+                    <a href="JavaScript5StatementsConditionalsLoops.zip">Statements (Conditions and Loops)</a>
+                    (<a href="JavaScript5StatementsConditionalsLoops.pdf" target="_blank">Lecture notes</a>)
+
+                    <ul style="list-style-type: square">
+                        <li>Reading:&nbsp; Chapter 5</li>
+                    </ul>
+
+                </li>
+
+                <li><a href="CST295Project02.htm">Project 2</a> (Due: Oct 1)</li>
+
+            </ul>
+
+            <p>Sept 26 – Oct 3</p>
+
+            <ul>
+
+                <li>
+                    <a href="JavaScript6Objects.zip">Objects</a>
+                    (<a href="JavaScript6Objects.pdf" target="_blank">Lecture notes</a>)
+
+                    <ul style="list-style-type: square">
+                        <li>Reading:&nbsp; Chapter 6</li>
+                    </ul>
+
+                </li>
+
+                <li><a href="CST295Project03.htm">Project 3</a> (Due: Oct 15)</li>
+
+            </ul>
+
+            <p>Oct 10 – 17</p>
+
+            <ul>
+
+                <li>
+                    <a href="JavaScript7Arrays.zip">Arrays</a>
+                    (<a href="JavaScript7Arrays.pdf" target="_blank">Lecture notes</a>)
+
+                    <ul style="list-style-type: square">
+                        <li>Reading:&nbsp; Chapter 7</li>
+                    </ul>
+
+                </li>
+
+                <li><a href="CST295Project04.htm">Project 4</a> (Due: Oct 24)</li>
+
+            </ul>
+
+            <p>Oct 22 – 24</p>
+
+            <ul>
+
+                <li>
+                    <a href="JavaScript8Functions.zip">Functions</a>
+                    (<a href="JavaScript8Functions.pdf" target="_blank">Lecture notes</a>)
+
+                    <ul style="list-style-type: square">
+                        <li>Reading:&nbsp; Chapter 8</li>
+                    </ul>
+
+                </li>
+
+                <li><a href="CST295Project05.htm">Project 5</a> (Due: Oct 31)</li>
+
+            </ul>
+
+            <p>Oct 29 – Nov 5</p>
+
+            <ul>
+
+                <li>
+                    <a href="JavaScript15DocumentObjectModel.zip">The Document Object Model</a>
+                    (<a href="JavaScript15DocumentObjectModel.pdf" target="_blank">Lecture notes</a>)
+
+                    <ul style="list-style-type: square">
+                        <li>Reading:&nbsp; Chapters 15 & 16</li>
+                    </ul>
+
+                </li>
+
+                <li><a href="CST295Project06.htm">Project 6</a> (Due: Nov 12)</li>
+
+            </ul>
+
+            <p>Nov 7 – 14</p>
+
+            <ul>
+
+                <li>
+                    <a href="JavaScript17HandlingEvents.zip">Event Handling</a>
+                    (<a href="JavaScript17HandlingEvents.pdf" target="_blank">Lecture notes</a>)
+
+                    <ul style="list-style-type: square">
+                        <li>Reading:&nbsp; Chapter 17</li>
+                    </ul>
+
+                </li>
+
+                <li><a href="CST295Project07.htm">Project 7</a> (Due: Nov 21)</li>
+
+            </ul>
+
+            <p>Nov 19 – 21</p>
+
+            <ul>
+
+                <li>
+                    <a href="JavaScript19jQueryLibrary.zip">The jQuery Library</a>
+                    (<a href="JavaScript19jQueryLibrary.pdf" target="_blank">Lecture notes</a>)
+
+                    <ul style="list-style-type: square">
+                        <li>Reading:&nbsp; Chapter 19</li>
+                    </ul>
+
+                </li>
+
+                <li><a href="CST295Project08.htm">Project 8</a> (Due: Nov 26)</li>
+
+            </ul>
+
+            <p>Nov 26</p>
+
+            <ul>
+
+                <li>
+                    <a href="JavaScript20ClientSideStorage.zip">Client Side Storage</a>
+                    (<a href="JavaScript20ClientSideStorage.pdf" target="_blank">Lecture notes</a>)
+
+                    <ul style="list-style-type: square">
+                        <li>Reading:&nbsp; Chapter 20</li>
+                    </ul>
+
+                </li>
+
+                <li><a href="CST295Project09.htm">Project 9</a> (Due: Dec 5)</li>
+
+            </ul>
+
+            <p>Dec 3 – 5</p>
+
+            <ul>
+
+                <li>
+                    <a href="JavaScript22APIs.zip">HTML API's</a>
+                    (<a href="JavaScript22APIs.pdf" target="_blank">Lecture notes</a>)
+
+                    <ul style="list-style-type: square">
+                        <li>Reading:&nbsp; Chapter 22</li>
+                    </ul>
+
+                </li>
+
+                <li><a href="CST295Project10.htm">Project 10</a> (Due: Dec 12)</li>
+
+            </ul>
+
+            <p>Dec 10 – 19</p>
+
+            <ul>
+
+                <li>
+                    JavaScript Application Projects
+
+                    <ul style="list-style-type: square">
+
+                        <li>
+                            Readings:
+
+                            <a href="https://javascript30.com/"
+                               target="_blank">
+                                #JavaScript30
+                            </a>
+
+                            (Signup for a free account before class on
+                            Dec 10 to participate)
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+            <p>Dec 19</p>
+
+            <ul>
+                <li>
+                    <b><a href="CST161Project13.ht_">Comprehensive Final Project</a></b>
+                    (Due: Dec 19)
+                </li>
+            </ul>
+
+        </blockquote>
+
+    </section >
+
+</body>
+
+</html>
